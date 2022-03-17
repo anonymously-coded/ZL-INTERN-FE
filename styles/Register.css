@@ -1,8 +1,67 @@
-body #h1 {
-    color: red;
-    text-align: center;
+body{
+    background-color: rgb(116, 219, 219);
 }
 
-body .registration-form {
+button[type =submit] {
+    width: 30%;
+    background-color: #4CAF50;
+    color: rgb(17, 16, 16);
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  button:hover{
+      background-color: rgb(230, 227, 100);
+  }
+
+  .container {
+      width: 30%;
     text-align: center;
+    border-radius: 15px;
+    background-color: #d2e4e4;
+    padding: 20px;
+    margin: auto;
+}
+
+.container .label-control {
+    text-align: left;
+    margin: auto;
+    padding: 7px;
+}
+
+.input-control {
+    width: 100%;
+    padding: 10px 15px;
+    margin: 4px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+
+.pointer {
+    cursor: pointer;
+}
+
+
+
+.radio-control{
+    width: 7%;
+  padding: 10px 15px;
+  margin: 4px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+
+.h1 { 
+    font-family: Arial,Helvetica,sans-serif; 
+    text-align: center;
+    color: red;
+    
 }

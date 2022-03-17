@@ -1,25 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Registration Page</title>
-    </head>
-    <body id = "body">
-        <div id="h1">
-            <h1>Registration Form</h1>
-        </div>
-        <!-- <div class="registration-form">
-            <form action="display.html" method="get">
-                <label for="name">Name:</label><br>
-                <input type="text" id="your-name" name="your-name" placeholder="Enter your name"><br>
-                <label for="mnumber">Mobile Number:</label><br>
-                <input type="number" id="mnumber" name="mnumber" placeholder="Enter your mobile number"><br><br>
-                <input type="submit" value="Submit">
-            </form>
-        </div> -->
-        
 
-    </body>
-    <script src="../scripts/script.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <script src="/scripts/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="../styles/Register.css">
+</head>
+
+<body id="body" class="body">
+    <div id="h1" class="h1">
+        <h1>Registration Form</h1>
+    </div>
+    <div class="container">
+        <form name="registration-form" id="myForm">
+            <div class="row">
+                <div class="label-control">
+                    <label for="yname">Your Name :</label>
+                </div>
+                <div class="col-75">
+                    <input class="input-control" type="text" id="yname" name="yname" placeholder="Enter your name" maxlength="15" pattern="^[A-Za-z]{1,15}$" title = "Should be in a set of characters with a length of less than 15" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="label-control">
+                    <label for="dob">Date of Birth :</label>
+                </div>
+                <div class="col-75">
+                    <input class="input-control" type="date" id="dob" name="dob">
+                </div>
+            </div>
+            <div class="row">
+                <div class="label-control">
+                    <label for="mobileNumber">Mobile Number :</label>
+                </div>
+                <div class="col-75">
+                    <input class="input-control" type="text" id="mobileNumber" maxlength="10" name="mobileNumber"
+                        placeholder="Enter your mobile number" pattern="^[1-9]{1}[0-9]{9}$" title="Only numbers can be used in this feild" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="label-control">
+                    <label for="email">Email :</label>
+                </div>
+                <div class="col-75">
+                    <input class="input-control" type="email" id="email" name="email" placeholder="Enter your email address"  title = "Should be in the format of characters@characters.domain" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="label-control">
+                    <label for="country">Country :</label>
+                </div>
+                <div class="col-75">
+                    <select class="input-control" name="country" id="country">Choose country
+                        <option value="India">India</option>
+                        <option value="Norway">Norway</option>
+                        <option value="Germany">Germany</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="label-control">
+                    <label for="uploadImage">Upload Image :</label>
+                </div>
+                <div class="col-75">
+                    <input class="input-control, pointer" type="file" id="uploadImage" name="uploadImage" accept="image/*">
+                </div>
+            </div>
+            <div class="row">
+                <div class="label-control">
+                    <label>Maritial Status :</label>
+                </div>
+                <div class="col-75">
+                    <input class ="radio-control, pointer" type="radio" id="radio_btn1" name="married_or_not" value="yes"><label>Yes</label>
+                    <input class ="radio-control, pointer" type="radio" id="radio_btn2" name="married_or_not" value="no"
+                        checked="checked"><label>No</label>
+
+                </div>
+            </div>
+            <br>
+
+            <div class="submit">
+                <button class="pointer" id="submit" onclick="submitCall()">Submit</button>
+            </div>
+        </form>
+    </div>
+
+
+
+</body>
+
 </html>
