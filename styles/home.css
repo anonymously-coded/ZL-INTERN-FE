@@ -1,0 +1,14 @@
+.container{
+    width: 30%;     
+    background-color: grey;
+}
+
+.body{
+    background-color: aqua;
+}
+
+.addButton{
+    display: flex;
+    position: absolute;
+    right: 5%;
+}
